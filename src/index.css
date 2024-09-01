@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  padding: 0 17%;
   padding-top: 5%;
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,10 +30,6 @@ header h1{
 }
 
 #core-concept {
-  padding: 0 17%;
-}
-
-.core-container {
 
   padding: 3rem 4rem;
   padding-bottom: 0;
@@ -49,19 +46,21 @@ header h1{
 .container {
   display: flex;
   color:white;
+  gap: 10px;
 }
 
-.core-container img {
+#core-concept img {
   width: 100px;
   height: 100px;
   line-height: 1rem;
 
 }
 
-.core-container p {
+#core-concept p {
 
   font-weight: 100;
-  font-size: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
   color: #a18aba;
   
 
@@ -70,7 +69,7 @@ header h1{
 
 #examples {
   margin: 3rem auto;
-  padding: 0 17%;
+
 }
 
 #examples h2 {
@@ -122,6 +121,6 @@ header h1{
 }
 
 #tab-content code {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
-
