@@ -32,7 +32,7 @@ header h1{
 #core-concept {
 
   padding: 3rem 4rem;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   border-radius: 2px;
   background-color: rgb(54, 3, 77);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -50,9 +50,8 @@ header h1{
 }
 
 #core-concept img {
-  width: 100px;
-  height: 100px;
-  line-height: 1rem;
+  width: 120px;
+  height: 120px;
 
 }
 
@@ -69,11 +68,11 @@ header h1{
 
 #examples {
   margin: 3rem auto;
+  text-align: left;
 
 }
 
-#examples h2 {
-  text-align: left;
+#examples h3 {
   color: #a18aba;
 }
 
@@ -99,7 +98,7 @@ header h1{
 
 #examples menu button:hover {
   background-color: #1b082f;
-  color: #ebe7ef;
+
 }
 
 #examples menu button.active {
@@ -112,15 +111,15 @@ header h1{
   border-radius: 6px;
   background-color: #654a82; 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  text-align: left;
   color: white;
 }
 
 #tab-content h3 {
   margin: 0;
+  color: white;
 }
 
 #tab-content code {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.5;
 }

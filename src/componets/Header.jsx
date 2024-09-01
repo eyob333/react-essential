@@ -16,7 +16,7 @@ export default function Header(){
         </header>
 
         <main>
-        <h2> time to get started! </h2>
+            <h2> time to get started! </h2>
         </main>
     </>    
     )

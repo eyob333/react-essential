@@ -1,7 +1,7 @@
 import TabButton from "./TabButton";
 import { EXAMPLES } from "../UserData";
 import { useState } from "react";
-
+import Tabs from "./Tabs";
 
 export default function TabContent(){
     const [selectedTopic, setSelectedTopic] = useState(null)
@@ -13,15 +13,13 @@ export default function TabContent(){
   
     }
     return <section id='examples'>
-        <h2> Exapmples </h2>
-
-        <menu>
-        <TabButton active={(selectedTopic == 'components') ? "active": null } onSelect={() => handleClick("components") }> componets </TabButton>
-        <TabButton active={(selectedTopic === 'jsx') ? "active": null } onSelect={() => handleClick("jsx") }> jsx </TabButton>
-        <TabButton active={(selectedTopic == 'props') ? "active": null } onSelect={() => handleClick("props") }> props </TabButton>
-        <TabButton active={(selectedTopic == 'state') ? "active": null } onSelect={() => handleClick("state") }> state </TabButton>
-        </menu>
-
+        <h3> Exapmples </h3>
+        <Tabs buttons={<>
+                <TabButton className={(selectedTopic == 'components') ? "active": null } onClick={() => handleClick("components") }> componets </TabButton>
+                <TabButton className={(selectedTopic === 'jsx') ? "active": null } onClick={() => handleClick("jsx") }> jsx </TabButton>
+                <TabButton className={(selectedTopic == 'props') ? "active": null } onClick={() => handleClick("props") }> props </TabButton>
+                <TabButton className={(selectedTopic == 'state') ? "active": null } onClick={() => handleClick("state") }> state </TabButton>
+            </>}>
         {!selectedTopic ? <h4 style={ {color: "#a18aba", textAlign: 'left', paddingLeft: '15px', cursor: "pointer"}}> select topic </h4>: 
 
             <div id='tab-content'>
@@ -32,7 +30,9 @@ export default function TabContent(){
                     {EXAMPLES[selectedTopic].code}
                     </code>
                 </pre>
-            </div>  }
+            </div>  }            
+        </Tabs>
+
 
     </section>
 }
