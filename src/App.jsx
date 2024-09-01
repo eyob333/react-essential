@@ -18,7 +18,8 @@ function App() {
   }
 
 
-  return <div>
+  return <>
+
 
     <Header />
     
@@ -73,9 +74,7 @@ function App() {
 
     </section>
 
-
-    
-  </div> 
+  </>
 
 }
 

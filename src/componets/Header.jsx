@@ -7,7 +7,8 @@ export default function Header(){
 
 
     return (
-    <div>
+    <>
+
         <header>
         <img src={reactImg}></img>
         <h1>REACT ESSENTIALS</h1>
@@ -17,6 +18,6 @@ export default function Header(){
         <main>
         <h2> time to get started! </h2>
         </main>
-    </div>      
+    </>    
     )
 }
